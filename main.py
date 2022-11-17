@@ -35,7 +35,7 @@ class CreatePlaylist:
         #collect each video and get important info
         for item in response["Items"]:
             video_title = item["snippet"]["title"]
-            youtube_url = "https://www.youtube.com/watch?v={}".format(item["id"])
+            youtube_url = "https://www.youtube.com/playlist?list=PL2VeCRc2Bsr8BM9fBX9a3q0tcpLHY0o_L".format(item["id"])
             video = youtube_dl.YoutubeDL({}).extract_info(youtube_url, download=False)
             song_name = video["track"]
             artist = video["artist"]
