@@ -23,8 +23,8 @@ SCOPE = "playlist-modify-public"
 token = util.prompt_for_user_token(
     username="t56gj8pnahvrhcctfnguutdp3",
     scope="playlist-modify-public",
-    client_id= "18155e6a08bc435b97a579b3ca2b8039",
-    client_secret="a603c74390ba467b890d05193a33445a",
+    client_id= "",
+    client_secret="",
     redirect_uri="https://lemashon.netlify.app/"
 )
 
