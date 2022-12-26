@@ -44,7 +44,7 @@ response = request.execute()
 
 # Create a new Spotify playlist
 playlist = spotify.user_playlist_create(
-    user="t56gj8pnahvrhcctfnguutdp3",
+    user="",
     name="Don Moen Worship songs",
     public="True",
 )
