@@ -14,18 +14,18 @@ SPOTIFY_CLIENT_SECRET = ""
 YOUTUBE_PLAYLIST_ID = ""
 
 # Replace this with the name of your Spotify playlist
-SPOTIFY_PLAYLIST_NAME = "Don Moen Worship songs"
+SPOTIFY_PLAYLIST_NAME = ""
 
 # Set the scope for the Spotify API
 SCOPE = "playlist-modify-public"
 
 # Get the authorization token for the Spotify API
 token = util.prompt_for_user_token(
-    username="t56gj8pnahvrhcctfnguutdp3",
+    username="",
     scope="playlist-modify-public",
     client_id= "",
     client_secret="",
-    redirect_uri="https://lemashon.netlify.app/"
+    redirect_uri=""
 )
 
 # Create the Spotify API client
@@ -45,7 +45,7 @@ response = request.execute()
 # Create a new Spotify playlist
 playlist = spotify.user_playlist_create(
     user="",
-    name="Don Moen Worship songs",
+    name="",
     public="True",
 )
 playlist_id = playlist["id"]
